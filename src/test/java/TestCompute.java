@@ -31,7 +31,7 @@ public class TestCompute {
     c = new Compute(mq);
     when(mq.size()).thenReturn(3);
     when(mq.contains("hello")).thenReturn(true);
-    when(mq.getAt(0)).thenReturn("hello");
+    when(mq.getAt(0)).thenReturn("hello"); //2 "hello" s in queue
     when(mq.getAt(1)).thenReturn("Nope");
     when(mq.getAt(2)).thenReturn("hello");
     assertEquals(2,c.countNumberOfOccurrences("hello"));
